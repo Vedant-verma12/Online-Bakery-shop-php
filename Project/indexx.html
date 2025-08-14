@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Portal</title>
+    <link rel="stylesheet" href="./css/style.css" >
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    GOV
+                </div>
+                <div class="gov-name">
+                    <h1>Government Portal</h1>
+                    <p>Digital Services for Citizens</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <div class="container">
+        <nav class="nav-bar">
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <button class="nav-link" data-dept="health">Health & Medical Services</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-dept="education">Education Department</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-dept="transport">Transport & Road Safety</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-dept="revenue">Revenue & Taxation</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-dept="social">Social Welfare</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-dept="agriculture">Agriculture & Farming</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-dept="police">Police & Security</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-dept="municipal">Municipal Services</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Welcome Message (shown by default) -->
+            <div class="welcome-message" id="welcomeMessage">
+                <h2>Welcome to Government Portal</h2>
+                <p>Select a department from the navigation menu above to view and download available forms and documents.</p>
+            </div>
+
+            <!-- Forms Section -->
+            <div class="forms-section" id="formsSection">
+                <h2 class="section-title" id="sectionTitle">Department Forms</h2>
+                <div style="overflow-x: auto;">
+                    <table class="forms-table">
+                        <thead>
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Form Name</th>
+                                <th>Size</th>
+                                <th>Download</th>
+                            </tr>
+                        </thead>
+                        <tbody id="formsTableBody">
+                            <!-- Dynamic content will be inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/scripts.js"></script>
+
+    </body>
+</html>
